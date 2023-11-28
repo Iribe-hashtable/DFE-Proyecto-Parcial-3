@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play & Win</title>
+  <style>
+    body {
+      background-color: #f5f0ff; 
+      color: #9c10a5; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      flex-direction: column; 
+    }
+
+    header {
+      background-color: #b48ead; 
+      padding: 10px;
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+    }
+
+    li a {
+      color: #430861;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    main {
+      background-color: #d9c6ec; 
+      padding: 30px; 
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+      max-width: 800px; 
+      margin: 20px auto; 
+    }
+
+    footer {
+      background-color: #b48ead; 
+      padding: 10px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      text-align: center;
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+    }
+
+    footer p {
+      color: #fff; 
+      margin: 0;
+      font-size: 1.2em; 
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/home">Home</a>
+        </li>
+        <li>
+          <a routerLink="/explorer">Ventas</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer>
+    <p>Proyecto 3er parcial DFE-3</p>
+    <p>Desarrollado por: RAMON ALEJANDRO IRIBE COTA</p>
+  </footer>
+
+</body>
+</html>
+
