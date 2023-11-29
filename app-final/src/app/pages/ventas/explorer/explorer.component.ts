@@ -35,7 +35,7 @@ export class ExplorerComponent implements OnInit {
       return 'Cargando...';
     } else {
       if (this.listadoSales.length > 0) {
-        const total = this.listadoSales.reduce((sum, sale) => sum + sale.price, 0);
+        const total = this.listadoSales.reduce((sum, sale) => +sum + +sale.price, 0);
         return `${total}`;
       } else {
         return 'No se han encontrado registros :(';

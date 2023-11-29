@@ -1,5 +1,5 @@
 <div class="table-container">
-
+<table>
     <thead>
       <tr>
         <th>ID</th>
@@ -19,7 +19,7 @@
       <tr *ngFor="let sale of listadoSales" (click)="saleSeleccionado = sale">
         <td> <strong>{{ sale.id }}</strong> </td>
         <td> <span class="tag">{{ sale.status }}</span> </td>
-        <td>{{ sale.game }}</td>
+        <td>{{ sale.music }}</td>
         <td>{{ sale.telNumber }}</td>
         <td>{{ sale.notes }}</td>
         <td>{{ sale.price | currency }}</td>
@@ -29,7 +29,7 @@
       </tr>
 
     </tbody>
-
+  </table>
 </div>
 
 <div class="message" *ngIf="listadoSales.length === 0">

@@ -9,7 +9,7 @@ export enum SaleEstatus {
     id: number;
     client:string;
     telNumber:number;
-    game:string,
+    music:string;
     seller:string;
     dateOfSale:string;
     price:number;
